@@ -5,6 +5,9 @@
   become: yes
   become_user: root
   tasks:
+  
+  - meta: clear_host_errors
+
   - name: delete wireshark
     yum:
       name: wireshark
