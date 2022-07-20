@@ -1,5 +1,5 @@
 ---
-# tasks file for weberver
+# tasks file for webserver
 
 - name: install apache
   become: true
