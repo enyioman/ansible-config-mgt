@@ -2,3 +2,5 @@
 54.211.80.54 ansible_ssh_user='ec2-user'
 54.173.102.158 ansible_ssh_user='ec2-user'
 
+[loadbalancer]
+18.215.168.110 ansible_ssh_user='ubuntu'
