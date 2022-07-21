@@ -9,6 +9,10 @@ apache_create_vhosts: true
 apache_vhosts_filename: "vhosts.conf"
 apache_vhosts_template: "vhosts.conf.j2"
 
+enable_apache_lb: false
+
+load_balancer_is_required: false
+
 # On Debian/Ubuntu, a default virtualhost is included in Apache's configuration.
 # Set this to `true` to remove that default.
 apache_remove_default_vhost: false
