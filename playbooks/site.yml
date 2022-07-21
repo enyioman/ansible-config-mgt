@@ -10,8 +10,6 @@
 - name: Webserver assignment
   import_playbook: ../static-assignments/uat-webservers.yml
 
-
----
 - hosts: all
 - name: this contains dynamic variables
   import_playbook: ../dynamic-assignments/env-vars.yml
