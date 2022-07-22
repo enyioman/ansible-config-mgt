@@ -19,7 +19,11 @@ pipeline {
             git branch: 'main', credentialsId: '25d43c7a-dd94-4ae8-9328-3f340af3429f', url: 'https://github.com/enyioman/ansible-config-mgt.git'
          }
        }
-
+       stage('Prepare Ansible For Execution') {
+        steps {
+          sh 'echo ${WORKSPACE}'
+         }
+      }
       stage('Run Ansible playbook') {
         steps {
            ansiblePlaybook become: true, colorized: true, credentialsId: 'private-key', disableHostKeyChecking: true, installation: 'ansible', inventory: 'inventory/dev', playbook: 'playbooks/site.yml'
