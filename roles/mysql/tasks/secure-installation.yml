@@ -22,7 +22,7 @@
 - name: Disallow root login remotely
   command: 'mysql -NBe "{{ item }}"'
   with_items:
-    - DELETE FROM mysql.user WHERE User='{{ mysql_root_username }}' AND Host NOT IN ('localhost', '127.0.0.1', '::1')
+    - DELETE FROM mysql.user WHERE User='{{ mysql_root_username }}' AND Host NOT IN ('localhost', '172.31.85.250', '::1')
   changed_when: false
 
 - name: Get list of hosts for the root user.
