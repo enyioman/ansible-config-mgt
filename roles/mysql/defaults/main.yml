@@ -116,7 +116,7 @@ mysql_databases:
 mysql_users:
    - name: admin
      host: "%"
-     password: password
+     password: admin
      priv: "tooling.*:ALL"
 
 mysql_disable_log_bin: false
